@@ -1,0 +1,59 @@
+
+
+
+
+
+/* убираем в списке маркеры */
+.list {
+  list-style: none
+;
+}
+
+/* убираем в сылках подчеркивание */
+.link {
+  text-decoration: none;
+}
+
+/* header */
+/* шрифт навигация сылки */
+.header-menu-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  color: #212121;
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: #2196F3;
+}
+
+/* шрифт навигация сылки контактов */
+.header-contact-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  color: #757575;
+}
+
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: #2196F3  
+}
+
+
+
+/* скрыть заголовок */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
