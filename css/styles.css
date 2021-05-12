@@ -22,15 +22,6 @@ body {
 }
 
 /* =========COMPONENTS============= */
-.logo-link {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: black;
-}
-
 .accent-logo {
   color: #2196f3;
 }
@@ -41,7 +32,19 @@ body {
 /* ========END COMPONENTS=========== */
 
 /* ===========HEADER=============== */
-/* шрифт навигация сылки */
+.header {
+  background-color: #ffffff;
+}
+
+.logo-link-header {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: black;
+}
+
 .header-menu-link {
   font-weight: 500;
   font-size: 14px;
@@ -78,6 +81,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .hero-button {
@@ -90,6 +94,16 @@ body {
   letter-spacing: 0.06em;
   background-color: #2196f3;
   color: #ffffff;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+  color: #ffffff;
+}
+
+.hero {
+  background-color: #2f303a;
 }
 /* =============END HERO========= */
 
@@ -113,8 +127,13 @@ body {
   line-height: 1.16;
   text-align: center;
 }
+/* =======END ACTIVITY============ */
 
-/* TEAM */
+/* ==========TEAM================= */
+.team {
+  background-color: #f5f4fa;
+}
+
 .team-title {
   font-size: 36px;
   line-height: 1.16;
@@ -134,19 +153,41 @@ body {
   text-align: center;
   color: #757575;
 }
-/* =======END ACTIVITY============= */
+/* =======END TEAM============= */
 
 /* FOOTER */
+.logo-link-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
 .contact-menu-link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  color: #ffffff;
 }
 
 .contact-menu-link:hover,
 .contact-menu-link:focus {
   color: #2196f3;
+}
+
+.contact {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(225, 225, 225, 0.6);
+}
+
+.footer {
+  background-color: #2f303a;
 }
 /* ======END FOOTER=============== */
 
