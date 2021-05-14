@@ -1,6 +1,11 @@
 /* кастомные свойства */
 :root {
   --accent-color: #2196f3;
+  --body-color: #212121;
+  --text-color: #757575;
+  --white-color: #ffffff;
+  --background-color: #2f303a;
+  --background-color-btn: #f5f4fa;
   --main-font: "Roboto", "Raleway", sans-serif;
   --secondary-font: ;
 }
@@ -17,13 +22,17 @@
 
 body {
   font-family: var(--main-font);
-  color: #212121;
+  color: var(--body-color);
   letter-spacing: 0.03em;
 }
 
 /* =========COMPONENTS============= */
-.accent-logo {
-  color: #2196f3;
+.logo-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
 }
 
 .btn {
@@ -33,16 +42,15 @@ body {
 
 /* ===========HEADER=============== */
 .header {
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }
 
-.logo-link-header {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: black;
+.logo-header {
+  color: #000000;
+}
+
+.header-menu-link.accent {
+  color: var(--accent-color);
 }
 
 .header-menu-link {
@@ -50,6 +58,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--body-color);
 }
 
 .header-menu-link:hover,
@@ -64,7 +73,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   cursor: pointer;
-  color: #757575;
+  color: var(--text-color);
 }
 
 .header-contact-link:hover,
@@ -81,7 +90,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .hero-button {
@@ -92,18 +101,18 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: #188ce8;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 /* =============END HERO========= */
 
@@ -117,7 +126,7 @@ body {
 .features-menu-text {
   font-size: 14px;
   line-height: 1.71;
-  color: #757575;
+  color: var(--text-color);
 }
 /* ==========END FEATURES========== */
 
@@ -131,7 +140,7 @@ body {
 
 /* ==========TEAM================= */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--background-color-btn);
 }
 
 .team-title {
@@ -151,31 +160,25 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  color: #757575;
+  color: var(--text-color);
 }
 /* =======END TEAM============= */
 
 /* FOOTER */
-.logo-link-footer {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+.logo-footer {
+  color: var(--white-color);
 }
 
 .contact-menu-link {
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .contact-menu-link:hover,
 .contact-menu-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .contact {
@@ -187,7 +190,7 @@ body {
 }
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 /* ======END FOOTER=============== */
 
@@ -198,14 +201,14 @@ body {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  color: #212121;
-  background-color: #f5f4fa;
+  color: var(--body-color);
+  background-color: var(--background-color-btn);
 }
 
 .portfolio-button-btn:hover,
 .portfolio-button-btn:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
 /* =====END PORTFOLIO BUTTON===== */
 
@@ -214,12 +217,13 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--body-color);
 }
 
 .portfolio-image-menu-text {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 1.87;
-  color: #757575;
+  color: var(--text-color);
 }
 /* ======END PORTFOLIO============= */
